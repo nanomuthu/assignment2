@@ -1,4 +1,4 @@
-
+#Main function to read a matrix and create inverse matrix and match them to catch cache
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
         
@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
              setinverse = setinverse,
              getinverse = getinverse)
 }
-
+#If Cache is found return from inverse rather than processing it
 cacheSolve <- function(x, ...) {
 
         inv <- x$getinverse()
